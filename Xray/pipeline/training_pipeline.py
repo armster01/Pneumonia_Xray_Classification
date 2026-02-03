@@ -53,6 +53,11 @@ class TrainPipeline:
 
         except Exception as e:
             raise XRayException(e, sys)
+        
+
+
+
+
     def start_data_transformation(self, data_ingestion_artifact: DataIngestionArtifact) -> DataTransformationArtifact:
         
         logging.info("Entered the start_data_transformation method of TrainPipeline class")
