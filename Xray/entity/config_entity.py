@@ -113,4 +113,4 @@ class ModelPusherConfig:
 
         self.train_transforms_key: str = TRAIN_TRANSFORMS_KEY
 
-        self.bentoml_ecr_image: str = BENTOML_ECR_URI
+        self.bentoml_ecr_image: str = BENTOML_ECR_IMAGE
