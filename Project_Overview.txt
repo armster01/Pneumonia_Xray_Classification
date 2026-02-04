@@ -2,13 +2,44 @@ Creating IAM user and attaching policy
 - Admin Access
 - S3 Full Access
 
+
+
 Creating S3 bucket named lungxray242 and dumped the data into the bucket in a folder named data
 
+
+
 Getting into IAM user named Deep-Learning-Project
+
+
 
 pushing the model in ECR by creating repository named xray_bentoml_image
 - configured the URL inside line:26 of Xray/components/model_pusher.py
 
+
+
 Login into AWS using AWS CLI
 - aws configure
 - Provide Access Key, Secret Key, region and output format as prompted
+
+
+
+Configuring EC2 for self hosted runner for the GitHub actions
+- Created a new EC2 instance using Ubuntu image
+- Installed GitHub runner on the EC2 instance
+- Configured the runner with the repository Deep-Learning-Project
+- Verified the runner is online in GitHub actions tab
+- Installed Docker on the EC2 instance
+- Installed AWS CLI on the EC2 instance
+- Configured AWS CLI with IAM user credentials
+
+
+
+
+This is basically the project structure we will configure every time :- 
+
+constants
+config_enity
+artifact_enity
+components
+pipeline
+main
